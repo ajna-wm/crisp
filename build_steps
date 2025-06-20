@@ -1,5 +1,0 @@
-docker build -t crisp-backend:1.0 --platform linux/amd64 .
-docker save -o crisp-backend.tar crisp-backend:1.0
-rsync -av crisp-backend.tar root@9.30.234.75:/home/images
-podman load -i crisp-backend.tar
-podman run --rm -p 9000:9000 <id>
